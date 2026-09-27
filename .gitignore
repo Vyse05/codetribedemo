@@ -1,0 +1,28 @@
+# misc
+node_modules/
+.DS_Store
+
+# tmp and lock files
+tmp/
+tmp-*/
+tmp-*
+
+# playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/downloads/
+.env
+*.env.json
+
+# generated run reports
+/reports/
+
+# IDEs
+.idea
+.vscode
+.cursor/
+
+# Claude Code — local tooling, not part of the deliverable
+.claude/

@@ -1,0 +1,41 @@
+{
+  "name": "codetribedemo",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript E2E tests for the Tricentis Demo Web Shop",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "CI=true playwright test",
+    "lint": "eslint '**/*.ts'",
+    "lint:fix": "npx eslint '**/*.ts' --fix",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "testing",
+    "e2e",
+    "demowebshop"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^10.3.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
+    "@typescript-eslint/parser": "^8.53.0",
+    "dayjs": "^1.11.13",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.7.4",
+    "prettier-eslint": "^16.4.2"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --fix"
+  }
+}
