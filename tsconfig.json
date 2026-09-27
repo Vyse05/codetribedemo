@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "ignoreDeprecations": "6.0",
+    "baseUrl": "./",
+    "paths": {
+      "@tests/*": ["src/demowebshop/tests/*"],
+      "@utils/*": ["src/demowebshop/utils/*"],
+      "@pages/*": ["src/demowebshop/pages/*"],
+      "@constants/*": ["src/demowebshop/constants/*"],
+      "@fixtures/*": ["src/demowebshop/tests/e2e/fixtures/*"],
+      "@typings/*": ["src/demowebshop/types/*"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,
+    "types": ["node", "@playwright/test"]
+  },
+  "include": ["src/**/*", "*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
